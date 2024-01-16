@@ -2,16 +2,16 @@ let player = {
     name: "Jibola",
     chips: 1000
 }
-let firstCard = getRandomCard();
-let secondCard = getRandomCard();
-let cards = [firstCard, secondCard]
-let sum = firstCard + secondCard
+let cards = []
+let sum = 0
 let hasBlackjack = false;
-let isAlive = true;
+let isAlive = false;
 let messageEl = document.getElementById("message-el")
 let cardsEl = document.getElementById("cards-el")
 let sumEl = document.getElementById("sum-el")
+let playerEl = document.getElementById("player-el")
 
+playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
     let randomNumber = Math.floor( Math.random() *12 ) + 1
@@ -25,6 +25,11 @@ function getRandomCard() {
 }
 
 function startGame() {
+    let firstCard = getRandomCard();
+    let secondCard = getRandomCard();
+    isAlive = true;
+    sum = firstCard + secondCard
+    cards = [firstCard, secondCard]
     renderGame()
 }
 

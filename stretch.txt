@@ -1,0 +1,1 @@
+You should implement a feature in the start game function that uses $5 to play a game and rewards you with $100 if you get blackjack
