@@ -5,8 +5,25 @@ body {
   color: white;
   background-image: url(table.png);
   background-size: cover;
+  font-size: bold;
 }
 
 h1 {
   color: goldenrod;
+}
+
+#message-el {
+  font-style: italic;
+}
+
+button {
+  background-color: goldenrod;
+  border: none;
+  color: #016f32;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin: 2px auto;
+  width: 150px;
+  padding: 7px;
 }
