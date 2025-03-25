@@ -1,0 +1,4 @@
+Add a "RESET GAME" button → Resets cards, sum, message, and UI.
+Track Player Chips → Deduct chips on loss, add on win.
+Improve the Ace Logic → Right now, an Ace is always 11, but in real Blackjack, it can be 1 if 11 makes the sum exceed 21.
+Add a Dealer (AI Opponent) → The dealer draws cards if their sum is < 17.
